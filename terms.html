@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms of use for the Morobe Provincial Health Authority website – conditions of access, acceptable use, disclaimers and intellectual property.">
+  <meta name="keywords" content="Morobe Provincial Health Authority, MPHA terms of use, website terms, disclaimer, PNG">
+  <meta name="author" content="Morobe Provincial Health Authority">
+  <meta name="theme-color" content="#0b5e4a">
+  <title>Terms of Use | Morobe Provincial Health Authority</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+  
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --primary: #0b5e4a;
+      --primary-dark: #084536;
+      --primary-light: #0e7a61;
+      --secondary: #1a7a9c;
+      --accent: #e8a317;
+      --text: #1a1a1a;
+      --text-light: #4a5568;
+      --bg: #f7f9fc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --radius: 8px;
+      --transition: all 0.25s ease;
+      --font: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    ul { list-style: none; }
+    button, .btn {
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    /* ===== Accessibility ===== */
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ===== Header ===== */
+    .top-bar {
+      background: var(--primary-dark);
+      color: white;
+      font-size: 0.85rem;
+      padding: 0.4rem 0;
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .top-bar a { color: rgba(255,255,255,0.9); }
+    .top-bar a:hover { color: white; }
+
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      gap: 1rem;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .logo-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Navigation */
+    nav { display: flex; align-items: center; }
+    .nav-list {
+      display: flex;
+      gap: 0.25rem;
+    }
+    .nav-list a {
+      display: block;
+      padding: 0.55rem 0.9rem;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+      border-radius: var(--radius);
+    }
+    .nav-list a:hover,
+    .nav-list a.active {
+      background: rgba(11, 94, 74, 0.08);
+      color: var(--primary);
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 0.4rem 0.7rem;
+      border-radius: var(--radius);
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    /* ===== Container ===== */
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ===== Page Hero ===== */
+    .page-hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--secondary) 100%);
+      color: white;
+      padding: 2.75rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .breadcrumb {
+      font-size: 0.9rem;
+      margin-bottom: 0.85rem;
+      opacity: 0.9;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+    .breadcrumb a:hover { color: white; }
+    .breadcrumb span { margin: 0 0.4rem; opacity: 0.6; }
+    .page-hero h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .page-hero p {
+      font-size: 1.1rem;
+      opacity: 0.92;
+      max-width: 640px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      transition: var(--transition);
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #1a1a1a;
+    }
+    .btn-primary:hover {
+      background: #f0b12a;
+      color: #1a1a1a;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(232, 163, 23, 0.35);
+    }
+    .btn-secondary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: var(--primary-dark);
+      color: white;
+    }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: white;
+      color: white;
+    }
+    .btn-sm {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* ===== Section Common ===== */
+    section {
+      padding: 3.25rem 0;
+    }
+
+    /* ===== Content Layout ===== */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* Intro */
+    .intro-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow);
+    }
+    .intro-card p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .intro-card p:last-child {
+      margin-bottom: 0;
+    }
+    .intro-card .meta {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Terms section */
+    .terms-section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow);
+    }
+    .terms-section h3 {
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.85rem;
+      font-weight: 700;
+    }
+    .terms-section p {
+      margin-bottom: 1rem;
+      color: var(--text);
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+    .terms-section p:last-child {
+      margin-bottom: 0;
+    }
+    .terms-section ul {
+      margin: 0.75rem 0 1.25rem 1.35rem;
+      list-style: disc;
+    }
+    .terms-section ul li {
+      margin-bottom: 0.45rem;
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.4rem;
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h4 {
+      font-size: 1rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.85rem;
+      font-weight: 650;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(11, 94, 74, 0.15);
+    }
+    .sidebar-card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .sidebar-card a {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .sidebar-card a::before {
+      content: '→ ';
+      color: var(--primary-light);
+    }
+
+    /* Notice */
+    .notice-banner {
+      background: #fff8e6;
+      border-left: 4px solid var(--accent);
+      padding: 1.1rem 1.35rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+    }
+    .notice-banner strong {
+      color: #92600a;
+    }
+    .notice-banner p {
+      font-size: 0.95rem;
+      color: #5c4a1a;
+      margin: 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      text-align: center;
+      padding: 3.25rem 0;
+    }
+    .cta-section h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.7rem;
+    }
+    .cta-section p {
+      opacity: 0.9;
+      max-width: 520px;
+      margin: 0 auto 1.6rem;
+    }
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      justify-content: center;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0a2e26;
+      color: rgba(255,255,255,0.85);
+      padding: 3rem 0 0;
+      font-size: 0.92rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-brand h3 {
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-brand p {
+      margin-bottom: 1rem;
+      line-height: 1.55;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.45rem;
+    }
+    .footer-col a {
+      color: rgba(255,255,255,0.75);
+    }
+    .footer-col a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-bottom a {
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-bottom a:hover { color: white; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 992px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--border);
+      }
+      .nav-list.open { display: flex; }
+      .nav-list a { padding: 0.75rem 1rem; }
+      .header-main { position: relative; }
+      .logo-text h1 { font-size: 1rem; }
+      .terms-section, .intro-card { padding: 1.4rem 1.25rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .top-bar .container { justify-content: center; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .cta-actions { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+    }
+
+    /* Print */
+    @media print {
+      .top-bar, .nav-toggle, .sidebar, .cta-section { display: none; }
+      header { box-shadow: none; border-bottom: 1px solid #ccc; }
+      body { background: white; color: black; }
+      .content-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top utility bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>Papua New Guinea · Morobe Province</span>
+      <div>
+        <a href="emergency.html">Emergency Contacts</a>
+        &nbsp;|&nbsp;
+        <a href="contact.html">Contact Us</a>
+        &nbsp;|&nbsp;
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-main">
+      <a href="index.html" class="logo-area" aria-label="Morobe Provincial Health Authority – Home">
+        <div class="logo-icon" aria-hidden="true">🏥</div>
+        <div class="logo-text">
+          <h1>Morobe Provincial Health Authority</h1>
+          <p>Improving Health. Saving Lives. Serving Morobe.</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span aria-current="page">Terms of Use</span>
+        </nav>
+        <h2 id="page-heading">Terms of Use</h2>
+        <p>Conditions of access and use for the official website of the Morobe Provincial Health Authority.</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section>
+      <div class="container">
+        <div class="content-grid">
+          <!-- Main column -->
+          <div class="main-content">
+
+            <!-- Intro -->
+            <div class="intro-card">
+              <p>By accessing and using this website, you agree to these Terms of Use. If you do not agree, please do not use the site. These terms apply to the public website of the Morobe Provincial Health Authority (MPHA).</p>
+              <p class="meta">Last updated: 2025 · Related: <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+
+            <!-- Acceptance -->
+            <div class="terms-section">
+              <h3>1. Acceptance of Terms</h3>
+              <p>Use of this website constitutes acceptance of these terms and any additional notices posted on the site. MPHA may update these terms from time to time. Continued use after changes means you accept the updated terms.</p>
+            </div>
+
+            <!-- Purpose -->
+            <div class="terms-section">
+              <h3>2. Purpose of the Website</h3>
+              <p>This website provides public information about the Morobe Provincial Health Authority, its services, facilities, programmes and official notices. It is not a substitute for professional medical advice, diagnosis or treatment.</p>
+              <p>Always seek the advice of qualified health workers for personal health concerns. In an emergency, go to the nearest appropriate health facility or use official emergency contacts.</p>
+            </div>
+
+            <!-- Accuracy -->
+            <div class="terms-section">
+              <h3>3. Accuracy of Information</h3>
+              <p>We aim to keep information accurate and up to date. However, content may change without notice. Facility services, clinic times, contact details and programme information can vary. Confirm critical details with the relevant facility or the Authority before relying on them.</p>
+              <p>Illustrative or sample content on some pages is clearly marked and should not be treated as current official data until replaced with approved information.</p>
+            </div>
+
+            <!-- Acceptable use -->
+            <div class="terms-section">
+              <h3>4. Acceptable Use</h3>
+              <p>You agree not to:</p>
+              <ul>
+                <li>Use the site for any unlawful purpose</li>
+                <li>Attempt to gain unauthorised access to systems or data</li>
+                <li>Interfere with the operation or security of the website</li>
+                <li>Misrepresent your identity or affiliation when contacting the Authority</li>
+                <li>Reproduce or redistribute content for commercial purposes without permission, except as allowed by law</li>
+              </ul>
+            </div>
+
+            <!-- Intellectual property -->
+            <div class="terms-section">
+              <h3>5. Intellectual Property</h3>
+              <p>Content on this website, including text, branding and layout, is protected by copyright and other intellectual property rights. The Morobe Provincial Health Authority and relevant rights holders retain ownership.</p>
+              <p>You may view and print content for personal, non-commercial use. For other uses (e.g. reproduction, adaptation or commercial use), contact the Authority for permission unless an exception under law applies.</p>
+            </div>
+
+            <!-- Links -->
+            <div class="terms-section">
+              <h3>6. External Links</h3>
+              <p>This website may link to external sites (e.g. National Department of Health, Morobe Provincial Government). External sites are not controlled by MPHA. We are not responsible for their content, availability or privacy practices. Links do not imply endorsement.</p>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="terms-section">
+              <h3>7. Disclaimer of Liability</h3>
+              <p>To the extent permitted by law, the Morobe Provincial Health Authority and its officers and staff are not liable for any loss or damage arising from use of this website or reliance on its content, including but not limited to:</p>
+              <ul>
+                <li>Errors or omissions in information</li>
+                <li>Temporary unavailability of the site</li>
+                <li>Actions taken based on website content without verifying with official sources</li>
+              </ul>
+              <p>Nothing on this site creates a doctor–patient or other professional relationship.</p>
+            </div>
+
+            <!-- Privacy -->
+            <div class="terms-section">
+              <h3>8. Privacy</h3>
+              <p>Use of this website is also subject to our <a href="privacy.html">Privacy Policy</a>, which describes how personal information may be collected and handled.</p>
+            </div>
+
+            <!-- Governing law -->
+            <div class="terms-section">
+              <h3>9. Governing Law</h3>
+              <p>These terms are governed by the laws of Papua New Guinea. Any disputes arising in connection with these terms or the website will be subject to the jurisdiction of the courts of Papua New Guinea, without prejudice to any mandatory rights under applicable law.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="terms-section">
+              <h3>10. Contact</h3>
+              <p>For questions about these Terms of Use, please contact the Morobe Provincial Health Authority via the <a href="contact.html">Contact Us</a> page.</p>
+            </div>
+
+            <!-- Notice -->
+            <div class="notice-banner" role="note">
+              <span aria-hidden="true" style="font-size:1.3rem;">ℹ️</span>
+              <div>
+                <p><strong>Official Information Notice</strong> — These Terms of Use apply to the public website. They do not replace clinical policies, employment terms or other formal agreements of the Morobe Provincial Health Authority. In case of conflict with applicable law, the law prevails.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar" aria-label="Related links">
+            <div class="sidebar-card">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="feedback.html">Feedback &amp; Complaints</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h4>About</h4>
+              <ul>
+                <li><a href="about.html">About MPHA</a></li>
+                <li><a href="governance.html">Governance</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Questions About These Terms?</h2>
+        <p>Contact the Morobe Provincial Health Authority for clarification, or review the Privacy Policy for information handling.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="privacy.html" class="btn btn-outline">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Morobe Provincial Health Authority</h3>
+          <p>Improving Health. Saving Lives. Serving Morobe.<br>
+          The official provincial health authority responsible for the delivery of public health services across Morobe Province, Papua New Guinea.</p>
+          <p style="font-size:0.85rem; opacity:0.8;">ANGAU Memorial Provincial Hospital forms a central part of the Authority’s health service network.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About MPHA</a></li>
+            <li><a href="services.html">Health Services</a></li>
+            <li><a href="facilities.html">Facilities Directory</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="health-alerts.html">Health Alerts</a></li>
+            <li><a href="public-health.html">Public Health</a></li>
+            <li><a href="procurement.html">Procurement</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="feedback.html">Feedback &amp; Complaints</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact &amp; Legal</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Morobe Provincial Health Authority. All rights reserved.</p>
+        <p>
+          <a href="sitemap.html">Sitemap</a> · 
+          <a href="https://www.health.gov.pg/" rel="noopener" target="_blank">National Department of Health</a> · 
+          <a href="https://www.morobe.gov.pg/" rel="noopener" target="_blank">Morobe Provincial Government</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    if (toggle && navList) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navList.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.textContent = isOpen ? '✕' : '☰';
+      });
+      navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navList.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.textContent = '☰';
+        });
+      });
+    }
+  </script>
+</body>
+</html>

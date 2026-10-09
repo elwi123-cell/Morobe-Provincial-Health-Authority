@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leadership of the Morobe Provincial Health Authority – Board members, Chief Executive Officer and executive management team responsible for governance and service delivery across Morobe Province.">
+  <meta name="keywords" content="Morobe Provincial Health Authority, MPHA leadership, Board, CEO, executive team, PNG health">
+  <meta name="author" content="Morobe Provincial Health Authority">
+  <meta name="theme-color" content="#0b5e4a">
+  <title>Leadership | Morobe Provincial Health Authority</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+  
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --primary: #0b5e4a;
+      --primary-dark: #084536;
+      --primary-light: #0e7a61;
+      --secondary: #1a7a9c;
+      --accent: #e8a317;
+      --text: #1a1a1a;
+      --text-light: #4a5568;
+      --bg: #f7f9fc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --radius: 8px;
+      --transition: all 0.25s ease;
+      --font: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+    a:hover { color: var(--primary-dark); }
+    ul { list-style: none; }
+    button, .btn {
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    /* ===== Accessibility ===== */
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      padding: 8px 16px;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ===== Header ===== */
+    .top-bar {
+      background: var(--primary-dark);
+      color: white;
+      font-size: 0.85rem;
+      padding: 0.4rem 0;
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .top-bar a { color: rgba(255,255,255,0.9); }
+    .top-bar a:hover { color: white; }
+
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      gap: 1rem;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .logo-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Navigation */
+    nav { display: flex; align-items: center; }
+    .nav-list {
+      display: flex;
+      gap: 0.25rem;
+    }
+    .nav-list a {
+      display: block;
+      padding: 0.55rem 0.9rem;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+      border-radius: var(--radius);
+    }
+    .nav-list a:hover,
+    .nav-list a.active {
+      background: rgba(11, 94, 74, 0.08);
+      color: var(--primary);
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 0.4rem 0.7rem;
+      border-radius: var(--radius);
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    /* ===== Container ===== */
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* ===== Page Hero ===== */
+    .page-hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--secondary) 100%);
+      color: white;
+      padding: 2.75rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .page-hero .container { position: relative; z-index: 1; }
+    .breadcrumb {
+      font-size: 0.9rem;
+      margin-bottom: 0.85rem;
+      opacity: 0.9;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+    .breadcrumb a:hover { color: white; }
+    .breadcrumb span { margin: 0 0.4rem; opacity: 0.6; }
+    .page-hero h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .page-hero p {
+      font-size: 1.1rem;
+      opacity: 0.92;
+      max-width: 640px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      transition: var(--transition);
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #1a1a1a;
+    }
+    .btn-primary:hover {
+      background: #f0b12a;
+      color: #1a1a1a;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(232, 163, 23, 0.35);
+    }
+    .btn-secondary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: var(--primary-dark);
+      color: white;
+    }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: white;
+      color: white;
+    }
+
+    /* ===== Section Common ===== */
+    section {
+      padding: 3.25rem 0;
+    }
+    .section-header {
+      max-width: 680px;
+      margin-bottom: 2.25rem;
+    }
+    .section-header.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section-header h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.55rem;
+      letter-spacing: -0.01em;
+    }
+    .section-header p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+    }
+
+    /* ===== Content Layout ===== */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Intro card */
+    .intro-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow);
+    }
+    .intro-card p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .intro-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Leadership cards */
+    .leader-section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow);
+    }
+    .leader-section h3 {
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+    .leader-section .section-desc {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .leader-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.35rem;
+    }
+
+    .leader-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.3rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .leader-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+      border-color: var(--primary-light);
+    }
+    .leader-avatar {
+      width: 88px;
+      height: 88px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: white;
+      margin: 0 auto 1rem;
+      border: 3px solid white;
+      box-shadow: 0 4px 12px rgba(11, 94, 74, 0.2);
+    }
+    .leader-card h4 {
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+      font-weight: 650;
+    }
+    .leader-role {
+      font-size: 0.9rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.55rem;
+    }
+    .leader-bio {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* Featured CEO / Chair style */
+    .featured-leader {
+      display: flex;
+      gap: 1.75rem;
+      align-items: flex-start;
+      background: linear-gradient(135deg, #f0f7f5 0%, #e8f4f8 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .featured-avatar {
+      width: 110px;
+      height: 110px;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      color: white;
+      flex-shrink: 0;
+      border: 4px solid white;
+      box-shadow: 0 6px 16px rgba(11, 94, 74, 0.25);
+    }
+    .featured-info h4 {
+      font-size: 1.25rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.25rem;
+    }
+    .featured-role {
+      font-size: 1rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .featured-info p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: sticky;
+      top: 100px;
+    }
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.4rem;
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h4 {
+      font-size: 1rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.85rem;
+      font-weight: 650;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(11, 94, 74, 0.15);
+    }
+    .sidebar-card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .sidebar-card a {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .sidebar-card a::before {
+      content: '→ ';
+      color: var(--primary-light);
+    }
+
+    /* Notice */
+    .notice-banner {
+      background: #fff8e6;
+      border-left: 4px solid var(--accent);
+      padding: 1.1rem 1.35rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+    }
+    .notice-banner strong {
+      color: #92600a;
+    }
+    .notice-banner p {
+      font-size: 0.95rem;
+      color: #5c4a1a;
+    }
+
+    /* Governance note */
+    .gov-note {
+      background: rgba(11, 94, 74, 0.06);
+      border: 1px solid rgba(11, 94, 74, 0.15);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.4rem;
+      margin-top: 1.5rem;
+    }
+    .gov-note h4 {
+      color: var(--primary-dark);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .gov-note p {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      text-align: center;
+      padding: 3.25rem 0;
+    }
+    .cta-section h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.7rem;
+    }
+    .cta-section p {
+      opacity: 0.9;
+      max-width: 520px;
+      margin: 0 auto 1.6rem;
+    }
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      justify-content: center;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0a2e26;
+      color: rgba(255,255,255,0.85);
+      padding: 3rem 0 0;
+      font-size: 0.92rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-brand h3 {
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-brand p {
+      margin-bottom: 1rem;
+      line-height: 1.55;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.45rem;
+    }
+    .footer-col a {
+      color: rgba(255,255,255,0.75);
+    }
+    .footer-col a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-bottom a {
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-bottom a:hover { color: white; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 992px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .featured-leader { flex-direction: column; align-items: center; text-align: center; }
+    }
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--border);
+      }
+      .nav-list.open { display: flex; }
+      .nav-list a { padding: 0.75rem 1rem; }
+      .header-main { position: relative; }
+      .logo-text h1 { font-size: 1rem; }
+      .leader-section, .intro-card { padding: 1.4rem 1.25rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .top-bar .container { justify-content: center; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .cta-actions { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .leader-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Print */
+    @media print {
+      .top-bar, .nav-toggle, .sidebar, .cta-section { display: none; }
+      header { box-shadow: none; border-bottom: 1px solid #ccc; }
+      body { background: white; color: black; }
+      .content-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top utility bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>Papua New Guinea · Morobe Province</span>
+      <div>
+        <a href="emergency.html">Emergency Contacts</a>
+        &nbsp;|&nbsp;
+        <a href="contact.html">Contact Us</a>
+        &nbsp;|&nbsp;
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-main">
+      <a href="index.html" class="logo-area" aria-label="Morobe Provincial Health Authority – Home">
+        <div class="logo-icon" aria-hidden="true">🏥</div>
+        <div class="logo-text">
+          <h1>Morobe Provincial Health Authority</h1>
+          <p>Improving Health. Saving Lives. Serving Morobe.</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">☰</button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="about.html">About</a>
+          <span>/</span>
+          <span aria-current="page">Leadership</span>
+        </nav>
+        <h2 id="page-heading">Board &amp; Executive Leadership</h2>
+        <p>Meet the Board and executive team providing strategic direction, governance and operational leadership for the Morobe Provincial Health Authority.</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section>
+      <div class="container">
+        <div class="content-grid">
+          <!-- Main column -->
+          <div class="main-content">
+
+            <!-- Intro -->
+            <div class="intro-card">
+              <p>The Morobe Provincial Health Authority is governed by a Board that sets strategic direction and ensures accountability. Day-to-day management is led by the Chief Executive Officer and an executive management team responsible for clinical services, public health, corporate support and facility operations across the province.</p>
+              <p>Leadership profiles and appointments published on this page are illustrative of the Authority’s governance structure. Official names, titles and contact details should be confirmed with the MPHA corporate office before formal correspondence or publication.</p>
+            </div>
+
+            <!-- Board of Directors -->
+            <div class="leader-section">
+              <h3>Board of Directors</h3>
+              <p class="section-desc">The Board provides overall governance, strategic oversight and accountability for the Authority’s performance and compliance.</p>
+
+              <div class="featured-leader">
+                <div class="featured-avatar" aria-hidden="true">👤</div>
+                <div class="featured-info">
+                  <h4>Board Chairperson</h4>
+                  <p class="featured-role">Chair of the Board</p>
+                  <p>Provides leadership to the Board, ensures effective governance processes, and maintains strategic alignment with national health policy and provincial priorities.</p>
+                </div>
+              </div>
+
+              <div class="leader-grid">
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">👤</div>
+                  <h4>Board Member</h4>
+                  <p class="leader-role">Director</p>
+                  <p class="leader-bio">Contributes to strategic decision-making, policy oversight and performance monitoring of the Authority.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">👤</div>
+                  <h4>Board Member</h4>
+                  <p class="leader-role">Director</p>
+                  <p class="leader-bio">Supports governance in areas of clinical quality, public health and community engagement.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">👤</div>
+                  <h4>Board Member</h4>
+                  <p class="leader-role">Director</p>
+                  <p class="leader-bio">Provides expertise in financial stewardship, risk management and organisational performance.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">👤</div>
+                  <h4>Board Member</h4>
+                  <p class="leader-role">Director</p>
+                  <p class="leader-bio">Represents stakeholder and community perspectives in Board deliberations and planning.</p>
+                </article>
+              </div>
+            </div>
+
+            <!-- Executive Leadership -->
+            <div class="leader-section">
+              <h3>Executive Leadership Team</h3>
+              <p class="section-desc">The executive team leads the day-to-day operations, clinical services and corporate functions of the Authority.</p>
+
+              <div class="featured-leader">
+                <div class="featured-avatar" aria-hidden="true">👨‍⚕️</div>
+                <div class="featured-info">
+                  <h4>Chief Executive Officer</h4>
+                  <p class="featured-role">CEO</p>
+                  <p>Leads the Authority’s overall management, strategic implementation, stakeholder relations and accountability for health service delivery across Morobe Province.</p>
+                </div>
+              </div>
+
+              <div class="leader-grid">
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">🩺</div>
+                  <h4>Director of Clinical Services</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Oversees hospital and clinical service delivery, quality of care and clinical governance across facilities.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">🛡️</div>
+                  <h4>Director of Public Health</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Leads public health programmes, disease surveillance, health promotion and outbreak response.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">📊</div>
+                  <h4>Director of Corporate Services</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Manages finance, human resources, administration, procurement and corporate support functions.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">🏥</div>
+                  <h4>Director of Nursing &amp; Midwifery</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Provides professional leadership for nursing and midwifery services and workforce development.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">📋</div>
+                  <h4>Director of Planning &amp; Performance</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Coordinates strategic planning, monitoring, evaluation and health information systems.</p>
+                </article>
+                <article class="leader-card">
+                  <div class="leader-avatar" aria-hidden="true">💊</div>
+                  <h4>Director of Medical Services</h4>
+                  <p class="leader-role">Executive</p>
+                  <p class="leader-bio">Supports medical workforce, clinical standards and specialised medical services across the network.</p>
+                </article>
+              </div>
+
+              <div class="gov-note">
+                <h4>Governance &amp; Accountability</h4>
+                <p>The Board and executive team operate under the framework of relevant PNG legislation, National Department of Health policies, and provincial government requirements. Regular reporting, performance monitoring and independent oversight support transparency and continuous improvement.</p>
+                <a href="governance.html" class="btn btn-secondary" style="padding: 0.5rem 1.1rem; font-size: 0.9rem;">View Governance &amp; Policies</a>
+              </div>
+
+              <div class="notice-banner" role="note">
+                <span aria-hidden="true" style="font-size:1.3rem;">ℹ️</span>
+                <div>
+                  <p><strong>Official Information Notice</strong> — Leadership titles and role descriptions on this page are representative of a typical provincial health authority structure. Actual names, current appointments and official contact details must be verified with the Morobe Provincial Health Authority before use in formal communications or publications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar" aria-label="Related links">
+            <div class="sidebar-card">
+              <h4>About MPHA</h4>
+              <ul>
+                <li><a href="about.html">About the Authority</a></li>
+                <li><a href="governance.html">Governance &amp; Policies</a></li>
+                <li><a href="departments.html">Departments &amp; Structure</a></li>
+                <li><a href="publications.html">Reports &amp; Publications</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h4>Key Areas</h4>
+              <ul>
+                <li><a href="services.html">Health Services</a></li>
+                <li><a href="facilities.html">Facilities Directory</a></li>
+                <li><a href="public-health.html">Public Health</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-card">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="contact.html">Contact the Authority</a></li>
+                <li><a href="feedback.html">Feedback &amp; Complaints</a></li>
+                <li><a href="emergency.html">Emergency Contacts</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Connect with MPHA Leadership</h2>
+        <p>For official correspondence, media enquiries or partnership discussions, please use the Authority’s formal contact channels.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="about.html" class="btn btn-outline">About MPHA</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Morobe Provincial Health Authority</h3>
+          <p>Improving Health. Saving Lives. Serving Morobe.<br>
+          The official provincial health authority responsible for the delivery of public health services across Morobe Province, Papua New Guinea.</p>
+          <p style="font-size:0.85rem; opacity:0.8;">ANGAU Memorial Provincial Hospital forms a central part of the Authority’s health service network.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About MPHA</a></li>
+            <li><a href="services.html">Health Services</a></li>
+            <li><a href="facilities.html">Facilities Directory</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="health-alerts.html">Health Alerts</a></li>
+            <li><a href="public-health.html">Public Health</a></li>
+            <li><a href="procurement.html">Procurement</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="feedback.html">Feedback &amp; Complaints</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact &amp; Legal</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Morobe Provincial Health Authority. All rights reserved.</p>
+        <p>
+          <a href="sitemap.html">Sitemap</a> · 
+          <a href="https://www.health.gov.pg/" rel="noopener" target="_blank">National Department of Health</a> · 
+          <a href="https://www.morobe.gov.pg/" rel="noopener" target="_blank">Morobe Provincial Government</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    if (toggle && navList) {
+      toggle.addEventListener('click', () => {
+        const isOpen = navList.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.textContent = isOpen ? '✕' : '☰';
+      });
+      navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navList.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.textContent = '☰';
+        });
+      });
+    }
+  </script>
+</body>
+</html>
